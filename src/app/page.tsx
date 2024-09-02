@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="p-8 bg-gray-100 min-h-screen font-sans">
-      <h1 className="text-4xl font-bold mb-6 text-center">Shopping Cart</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center text-black">Shopping Cart</h1>
       <div className="flex flex-col space-y-4">
         {myItems.map((item, index) => (
           <ItemCart
@@ -54,8 +54,8 @@ export default function Home() {
         ))}
       </div>
       <Stack direction="row" spacing={2} className="mt-6">
-        <Typography variant="h4" className="font-bold font-sans">Total</Typography>
-        <Typography variant="h4" className="font-bold font-sans">{formatCurrency(totalPrice)}</Typography>
+        <Typography variant="h4" className="font-bold font-sans text-black">Total</Typography>
+        <Typography variant="h4" className="font-bold font-sans text-black">{formatCurrency(totalPrice)}</Typography>
       </Stack>
     </div>
   );

@@ -30,7 +30,7 @@ export default function ItemCart({ itemname, price, image, handleIncremental, ha
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 font-sans">
+    <div className="bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 font-sans text-black">
       <Image src={image} alt={itemname} width={100} height={100} className="rounded-lg" />
       <div className="flex-1">
         <Typography variant="h6">{itemname}</Typography>
